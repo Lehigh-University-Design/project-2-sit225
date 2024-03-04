@@ -2,7 +2,62 @@ body{
     font-family: "Baloo Bhai 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: #7E9AE6;
     background-color: #FBDCEA;
     background-size: 20px 20px;
     background-image:  repeating-linear-gradient(to right, #7E9AE6, #7E9AE6 1px, #FBDCEA 1px, #FBDCEA);
 }
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+}
+
+.post{
+    margin-bottom: 20px;
+    padding: 50px 20px;
+}
+
+.split-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    margin-bottom: 1em;
+}
+
+.split-child{
+    min-height: 1em;
+    background-color: white;
+    border: 1px solid #7E9AE6;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    h2{
+        font-size: 50px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.split-child-transparent{
+    min-height: 1em;
+    background-color: transparent;
+    padding: 10px 20px;
+
+    img{
+        background-color: transparent;
+        width: 220px;
+        height: auto;
+    }
+}
+   
+
+
+
+
+
