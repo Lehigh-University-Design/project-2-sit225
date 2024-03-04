@@ -14,31 +14,46 @@ body{
   }
 
 .post{
-    margin-bottom: 20px;
+    place-content: center;
+    margin-bottom: 0px;
     padding: 50px 20px;
 }
 
 .frame{
-    margin: 50px;
+    margin: 100px;
     border: 1px solid #7E9AE6;
     border-radius: 20px;
     background-color: white;
 }
 
 .row-parent{
+    min-width: 70vw;
+    text-align: center;
     margin: 0px 100px;
     display: grid;
     grid-template-rows: auto;
-    gap: 1em;
-  
-    background-color: white;
-    border: 1px solid #7E9AE6;
+   
+    border: 40px solid transparent;
+    border-image: url(../assets/border.png) 100;
+    border-image-repeat: round;
     border-radius: 10px;
+    position: relative;
+}
+
+.row-parent::before {
+  z-index: 1;
+  content: '';
+  position: absolute; 
+  top: 0px;
+  bottom: 0px;
+  left: 0px; 
+  right: 0px; 
+  background-color: white; 
+  border-radius: 10px; 
 }
 
 .row-child{
-  display: grid;
-  place-content: center;
+  z-index: 2;
   min-height: 1em;
   padding: 10px 20px;
 
@@ -48,7 +63,7 @@ body{
   }
 
   h2{
-    font-size: 100px;
+    font-size: 80px;
     text-transform: uppercase;
     margin: 0;
   }
@@ -68,7 +83,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: #7E9AE6;
     transition: all 0.3s ease 0s;
