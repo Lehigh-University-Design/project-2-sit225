@@ -71,14 +71,22 @@ p{
 }
 
 .split-parent.two-images{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
 }
 
 .split-parent.one-image{
     grid: auto;
 
     h2{
+        text-transform: uppercase;
+        font-size: 50px;
         z-index: 2;
+        text-align: center;
+    }
+
+    img{
+        width: 700px;
+        height: auto;
     }
 }
 
@@ -127,6 +135,15 @@ p{
     grid-column-end: 4;
 }
 
+.two-image-caption{
+    z-index: 2;
+    padding: 0px 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 .small-caption{
     z-index: 2;
     padding: 0px 60px;
