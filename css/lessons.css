@@ -81,12 +81,11 @@ p{
 }
 
 .caption{
-    
     z-index: 2;
-    padding: 0px 60px;
-    text-align: center;
     font-size: 50px;
     font-weight: 600;
+    padding: 0px 60px;
+    text-align: center;
     grid-column-start: 1;
     grid-column-end: 4;
 }
