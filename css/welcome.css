@@ -31,7 +31,8 @@ body{
     text-align: center;
     margin: 0px 100px;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
    
     border: 40px solid transparent;
     border-image: url(../assets/border.png) 100;
