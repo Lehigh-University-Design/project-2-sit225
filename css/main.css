@@ -66,6 +66,22 @@ p{
     grid-template-columns: auto auto auto;
 }
 
+.split-parent.three-gifs{
+    grid-template-columns: auto auto auto;
+}
+
+.split-parent.two-images{
+    grid-template-columns: 1fr 1fr;
+}
+
+.split-parent.one-image{
+    grid: auto;
+
+    h2{
+        z-index: 2;
+    }
+}
+
 .split-parent::before {
     z-index: 1;
     content: '';
@@ -90,8 +106,8 @@ p{
     img{
         width: 250px;
         height: auto;
-      }
-
+    }
+    
     h2{
     
         font-size: 50px;
@@ -118,6 +134,13 @@ p{
     font-size: 16px;
     font-weight: 400;
   
+}
+
+.big-image{
+    img{
+        height: 100px;
+        width: auto;
+    }
 }
 
 
